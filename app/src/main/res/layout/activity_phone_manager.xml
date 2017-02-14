@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.phonehelper.activitys.PhoneManagerActivity">
+    <com.example.administrator.phonehelper.widgets.TopBar
+        android:id="@+id/top_header"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        custom:leftTextColor="#FFFFFF"
+        custom:leftBackground="@mipmap/btn_homeasup_default"
+        custom:titleTextSize="8dp"
+        custom:titleTextColor="#000000"
+        custom:toptitle="@string/PhoneManagerTitle">
+    </com.example.administrator.phonehelper.widgets.TopBar>
+
+
+    <ListView
+        android:id="@+id/lv_phoneMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_view"
+        android:layout_alignParentBottom="true">
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/rl_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/top_header"
+        android:layout_alignParentStart="true">
+        <com.example.administrator.phonehelper.widgets.MoveProgressBar
+           android:id="@+id/pb_moveProgress"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="50dp"
+            android:progressDrawable="@drawable/progressbar_style"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_toLeftOf="@+id/v_inke"
+            />
+        <View
+            android:id="@+id/v_inke"
+            android:layout_width="15dp"
+            android:layout_height="30dp"
+            android:background="@color/khaki"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_phoneElectric"
+            />
+        <com.example.administrator.phonehelper.widgets.MoveTextView
+            android:id="@+id/tv_phoneElectric"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="20sp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:text="100"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

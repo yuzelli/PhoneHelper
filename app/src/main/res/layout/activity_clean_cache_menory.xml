@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitys.CleanCacheMemoryActivity">
+
+       <com.example.administrator.phonehelper.widgets.TopBar
+        android:id="@+id/top_header"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        custom:leftBackground="@mipmap/btn_homeasup_default"
+        custom:leftTextColor="#FFFFFF"
+        custom:titleTextColor="#000000"
+        custom:titleTextSize="8dp"
+        custom:toptitle="@string/cache_memory"></com.example.administrator.phonehelper.widgets.TopBar>
+
+    <RelativeLayout
+        android:id="@+id/rl_allRubbish"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_below="@+id/top_header"
+        android:background="@color/limegreen">
+
+        <TextView
+            android:id="@+id/tv_allRubbish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="42sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_allRubbish"
+            android:layout_toStartOf="@+id/tv_allRubbish"
+            android:gravity="center"
+            android:text="@string/SDCleanDiscover"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_checkingapp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_toLeftOf="@+id/pr_appcachebar"
+            android:lines="1"
+            android:text="现在扫描："
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ProgressBar
+            android:id="@+id/pr_appcachebar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/tv_checkingapp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/tv_allRubbish"
+            android:focusableInTouchMode="false"
+            android:indeterminate="false" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_cleanALL"
+        android:layout_below="@+id/rl_allRubbish"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:id="@+id/ll_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"></LinearLayout>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/btn_cleanALL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_shape_btn_blue_10dp"
+        android:text="@string/SDCleanDisposableClean"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>

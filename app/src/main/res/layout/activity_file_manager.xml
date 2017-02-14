@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.phonehelper.activitys.FileManagerActivity">
+
+    <ListView
+        android:id="@+id/lv_fileContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_topView">
+
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/ll_topView"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:id="@+id/tv_allFileSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            android:textStyle="italic|bold"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="0.00G"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:text="已发现"
+            android:layout_alignBaseline="@+id/tv_allFileSize"
+            android:layout_alignBottom="@+id/tv_allFileSize"
+            android:layout_toStartOf="@+id/tv_allFileSize" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.phonehelper.activitys.SplashActivity">
+    <ImageView
+        android:id="@+id/iv_spl_background"
+        android:layout_width="match_parent"
+        android:src="@drawable/splash0"
+        android:scaleType="fitXY"
+        android:layout_height="match_parent" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ban_shadow"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:textSize="48sp"
+        android:id="@+id/tv_title"
+        android:layout_centerInParent="true"
+        android:text="@string/phoneHelper"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:textSize="23sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:text="@string/welcome"/>
+</RelativeLayout>

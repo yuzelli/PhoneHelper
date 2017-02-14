@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitys.MainActivity">
+    <include
+        android:id="@+id/include_titlebar"
+        layout="@layout/block_header"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include_titlebar"
+        android:layout_above="@+id/ll_contentview">
+        <com.example.administrator.phonehelper.widgets.CirleRocket
+           android:id="@+id/circle_rocket"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            />
+
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_contentview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:layout_above="@+id/ll_bottomView"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/ll_rocket"
+            style="@style/MainActivityItemLLStyle"
+            >
+            <ImageView
+                style="@style/MainActivityItemIMGStyle"
+                android:src="@mipmap/icon_rocket"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/rocket"
+                android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_softmgr"
+            style="@style/MainActivityItemLLStyle">
+            <ImageView
+                style="@style/MainActivityItemIMGStyle"
+                android:src="@mipmap/icon_softmgr"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/softmgr"
+                android:layout_marginTop="10dp"
+                android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_phonemgr"
+            style="@style/MainActivityItemLLStyle">
+            <ImageView
+                style="@style/MainActivityItemIMGStyle"
+                android:src="@mipmap/icon_phonemgr"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/phonemgr"
+                android:layout_marginTop="10dp"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottomView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/ll_telmgr"
+            style="@style/MainActivityItemLLStyle"
+            >
+            <ImageView
+                style="@style/MainActivityItemIMGStyle"
+                android:src="@mipmap/icon_telmgr"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/telmgr"
+                android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_filemgr"
+            style="@style/MainActivityItemLLStyle">
+            <ImageView
+                style="@style/MainActivityItemIMGStyle"
+                android:src="@mipmap/icon_filemgr"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/filemgr"
+                android:layout_marginTop="10dp"
+                android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_sdclean"
+            style="@style/MainActivityItemLLStyle">
+            <ImageView
+                style="@style/MainActivityItemIMGStyle"
+                android:src="@mipmap/icon_sdclean"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sdclean"
+                android:layout_marginTop="10dp"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

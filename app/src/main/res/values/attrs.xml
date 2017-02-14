@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Topbar">
+        <attr name="toptitle" format="string" />                           <!--中间文字，类型字符串-->
+        <attr name="titleTextSize" format="dimension" />                   <!--字体大小，类型为数字-->
+        <attr name="titleTextColor" format="color"/>                       <!--字体颜色，类型为颜色-->
+        <attr name="leftTextColor" format="color"/>                        <!--左侧字体颜色，类型为颜色-->
+        <attr name="leftBackground" format="reference|color" />            <!--左侧背景颜色，类型为图片和颜色-->
+        <attr name="leftText" format="string" />                           <!--左侧文字-->
+        <attr name="rightTextColor" format="color"/>                       <!--右侧文字颜色-->
+        <attr name="rightBackground" format="reference|color" />           <!--右侧背景-->
+        <attr name="rightText" format="string" />                          <!--右侧文字-->
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_file_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.phonehelper.activitys.FileListActivity">
+    <com.example.administrator.phonehelper.widgets.TopBar
+        android:id="@+id/top_header"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        custom:leftTextColor="#FFFFFF"
+        custom:leftBackground="@mipmap/btn_homeasup_default"
+        custom:titleTextSize="8dp"
+        custom:titleTextColor="#000000"
+        >
+    </com.example.administrator.phonehelper.widgets.TopBar>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_header"
+        android:layout_above="@+id/btn_clean">
+        <ListView
+            android:id="@+id/lv_fileContentList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        </ListView>
+        <ImageView
+            android:id="@+id/img_emptyView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_launcher"
+            />
+    </FrameLayout>
+
+
+
+
+    <Button
+        android:id="@+id/btn_clean"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="一键清理"/>
+</RelativeLayout>

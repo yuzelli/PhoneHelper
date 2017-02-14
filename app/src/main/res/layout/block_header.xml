@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@color/burlywood"
+    android:layout_height="45dp">
+    <ImageButton
+        android:id="@+id/btn_head_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:src="@mipmap/icon_png"
+        android:layout_alignParentLeft="true"
+        android:visibility="visible" />
+
+    <TextView android:id="@+id/tv_label_head_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="标题栏"
+        android:layout_centerInParent="true"
+        />
+
+    <ImageButton
+        android:id="@+id/btn_head_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:src="@mipmap/ic_child_configs"
+        android:layout_alignParentRight="true"
+        android:visibility="visible" />
+</RelativeLayout>

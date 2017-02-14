@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">PhoneHelper</string>
+    <!--闪屏页使用的文字-->
+    <string name="phoneHelper">手机助手</string>
+    <string name="welcome">清理手机的好帮手</string>
+
+    <!--首页使用的文字-->
+    <string name="rocket">手机加速</string>
+    <string name="softmgr">软件管理</string>
+    <string name="phonemgr">手机检查</string>
+    <string name="telmgr">通信大全</string>
+    <string name="sdclean">垃圾清理</string>
+    <string name="filemgr">文件管理</string>
+
+    <!--手机检测页面-->
+    <string name="PhoneManagerTitle">手机检测界面</string>
+
+    <!--通信大全-->
+    <string name="TellManagerTitle">通信大全界面</string>
+
+    <!--软件管理页面-->
+    <string name="SoftManagerTitle">软件管理界面</string>
+    <string name="deleteSelectApp">删除所选的应用</string>
+
+    <!--手机加速页面-->
+    <string name="RecketTitle">手机加速页面</string>
+    <string name="killProgress">一键加速</string>
+    <string name="showUserProgress">显示用户进程</string>
+
+    <!--垃圾清理界面-->
+    <string name="SDCleanTitle">垃圾清理界面</string>
+    <string name="SDCleanDiscover">以发现</string>
+    <string name="SDCleanDisposableClean">一键清理</string>
+
+    <!--清理缓存界面-->
+    <string name="cache_memory">清理缓存界面</string>
+</resources>
